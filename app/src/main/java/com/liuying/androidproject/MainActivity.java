@@ -31,11 +31,14 @@ public class MainActivity extends AppCompatActivity {
   @OnItemClick(R.id.list_view) public void onItemClickListener(int position) {
     switch (position) {
       case 0:
-        ARouter.getInstance().build("/test/test_activity")
+        ARouter.getInstance().build("/room/room_db")
             //.greenChannel() 不走拦截
             .navigation();
         break;
       case 1:
+        ARouter.getInstance().build("/test/test_activity")
+            //.greenChannel() 不走拦截
+            .navigation();
 
         break;
     }

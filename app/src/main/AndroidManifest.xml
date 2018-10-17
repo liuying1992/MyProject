@@ -38,7 +38,10 @@
         android:name=".router.RouterTestActivity"
         android:screenOrientation="portrait"
         />
-
+    <activity
+        android:name=".activity.RoomDatabaseActivity"
+        android:screenOrientation="portrait"
+        />
   </application>
 
 </manifest>
