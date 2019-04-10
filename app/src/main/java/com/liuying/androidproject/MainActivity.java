@@ -17,7 +17,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 public class MainActivity extends AppCompatActivity {
 
   @BindView(R.id.list_view) ListView mListView;
-  private String[] title = new String[] { "ROM数据库", "标题2" };
+  private String[] title = new String[] { "ARouter" };
   private ArrayAdapter<String> mSimpleAdapter;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +30,15 @@ public class MainActivity extends AppCompatActivity {
 
   @OnItemClick(R.id.list_view) public void onItemClickListener(int position) {
     switch (position) {
+      //case 0:
+      //  ARouter.getInstance().build("/room/room_db")
+      //      //.greenChannel() 不走拦截
+      //      .navigation();
+      //  break;
       case 0:
-        ARouter.getInstance().build("/room/room_db")
-            //.greenChannel() 不走拦截
-            .navigation();
-        break;
-      case 1:
         ARouter.getInstance().build("/test/test_activity")
             //.greenChannel() 不走拦截
             .navigation();
-
         break;
     }
   }
