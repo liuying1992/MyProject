@@ -7,5 +7,6 @@ package com.liuying.androidproject.path;
  * Email: ly1203575492@163.com
  */
 public interface RouterPath {
-  public static final String _PATH = "";
+  public static final String TEST_PATH = "/test/test_activity";
+  public static final String OKHTTP_PATH = "/okhttp/demo";
 }
